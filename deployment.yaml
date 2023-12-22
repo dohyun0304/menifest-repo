@@ -21,16 +21,9 @@ spec:
     spec:
       containers:
         - name: game2048
-          image: "902643419733.dkr.ecr.ap-northeast-2.amazonaws.com/app:latest"
+          image: 902643419733.dkr.ecr.ap-northeast-2.amazonaws.com/app:latest
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
               containerPort: 8080
               protocol: TCP
-      nodeSelector:
-        nodeType: service-2023
-      tolerations:
-        - key: service
-          operator: "Equal"
-          value: "true"
-          effect: "NoSchedule"
