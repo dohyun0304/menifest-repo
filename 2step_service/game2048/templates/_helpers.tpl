@@ -24,6 +24,13 @@ If release name contains chart name it will be used as a full name.
 {{- end }}
 
 {{/*
+Define namespace
+*/}}
+{{- define "chart.namespace" -}}
+{{ .Values.namespace | default .Release.Namespace }}
+{{- end }}
+
+{{/*
 Create chart name and version as used by the chart label.
 */}}
 {{- define "game2048.chart" -}}

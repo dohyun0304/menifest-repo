@@ -6,7 +6,7 @@ appName: "game2048"
 replicaCount: 3
 
 image:
-  repository: 902643419733.dkr.ecr.ap-northeast-2.amazonaws.com/app
+  repository: 902643419733.dkr.ecr.ap-northeast-2.amazonaws.com
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
