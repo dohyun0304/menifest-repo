@@ -1,8 +1,7 @@
 name: automerge
 on:
   pull_request:
-    branches:
-      - main
+    branches: [ main ]
     types:
       - labeled
 
