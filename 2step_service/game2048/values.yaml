@@ -4,26 +4,20 @@
 
 appName: "game2048"
 replicaCount: 3
-
 image:
   repository: 902643419733.dkr.ecr.ap-northeast-2.amazonaws.com/app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "latest"
-
+  tag: "1bc4d"
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
-
 podAnnotations: {}
-
 maxSurge: 34%
 maxUnavailable: 0%
-
 service:
   type: ClusterIP
   port: 8080
-
 ingress:
   annotations:
     kubernetes.io/ingress.class: alb
@@ -44,17 +38,16 @@ ingress:
                 name: game2048
                 port:
                   number: 8080
-
 resources: {}
-  # We usually recommend not to specify default resources and to leave this as a conscious
-  # choice for the user. This also increases chances charts run on environments with little
-  # resources, such as Minikube. If you do want to specify resources, uncomment the following
-  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
-  # limits:
-  #   cpu: 100m
-  #   memory: 128Mi
-  # requests:
-  #   cpu: 100m
+# We usually recommend not to specify default resources and to leave this as a conscious
+# choice for the user. This also increases chances charts run on environments with little
+# resources, such as Minikube. If you do want to specify resources, uncomment the following
+# lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+# limits:
+#   cpu: 100m
+#   memory: 128Mi
+# requests:
+#   cpu: 100m
 #   memory: 128Mi
 
 autoscaling:
@@ -63,9 +56,6 @@ autoscaling:
   maxReplicas: 100
   targetCPUUtilizationPercentage: 80
   # targetMemoryUtilizationPercentage: 80
-
 nodeSelector: {}
-
 tolerations: []
-
 affinity: {}
