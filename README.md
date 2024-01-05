@@ -13,4 +13,4 @@
 - game2048: game2048.dohyun0304.shop
 - argocd: argocd.dohyun0304.shop
 
-### 6. Prometheus helm 설치 및 grafana helm 설치
+### 6. Prometheus helm 설치 및 grafana helm 설치 연동
