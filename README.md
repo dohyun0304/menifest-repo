@@ -3,6 +3,7 @@
 ### 2. step_menifest => 1번의 파일을 helm_chart로 변경하여 배포
 
 ### 3. EKS에 helm_Chart로 ArgoCD 서비스 구동 및 CD
+- argo-helm/chart/argo-cd/values.yaml
 - 설치 방법 및 셋팅은 notion 참고
 
 ### 4. git action을 통한 build 연동
@@ -14,3 +15,5 @@
 - argocd: argocd.dohyun0304.shop
 
 ### 6. Prometheus helm 설치 및 grafana helm 설치 연동
+- prometheus-helm/chart/prometheus/prometheus-vaules.yaml
+- 설치 방법 및 셋팅은 notion 참고
