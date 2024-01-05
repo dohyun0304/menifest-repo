@@ -1956,7 +1956,7 @@ server:
     ## Hostnames must be provided if Ingress is enabled.
     ## Secrets must be manually created in the namespace
     hosts:
-      # - argocd.example.com
+      - argocd.dohyun0304.shop
 
     # -- List of ingress paths
     paths:
@@ -1980,7 +1980,7 @@ server:
       #     - argocd.example.com
 
     # -- Uses `server.service.servicePortHttps` instead `server.service.servicePortHttp`
-    https: false
+    https: true
 
     servicePortHttp: 80
   # dedicated ingress for gRPC as documented at

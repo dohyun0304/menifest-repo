@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 
 appName: "game2048"
-replicaCount: 3
+replicaCount: 1
 image:
   repository: 902643419733.dkr.ecr.ap-northeast-2.amazonaws.com/app
   pullPolicy: IfNotPresent
@@ -37,6 +37,8 @@ ingress:
                 name: game2048
                 port:
                   number: 8080
+  hosts:
+    - game2048.dohyun0304.shop
 resources: {}
 # We usually recommend not to specify default resources and to leave this as a conscious
 # choice for the user. This also increases chances charts run on environments with little
